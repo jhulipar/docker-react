@@ -1,4 +1,4 @@
-FROM nginx:latest-arm64 as builder
+FROM nginx:latest as builder
 WORKDIR '/app'
 COPY package.json .
 RUN npm install
